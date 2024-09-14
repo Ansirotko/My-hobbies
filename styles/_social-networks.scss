@@ -21,3 +21,14 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .social-networks {
+        &__items {
+            font-size: 13px;
+            &:not(:last-child) {
+                margin-right: 12px;
+            }
+        }
+    }
+}

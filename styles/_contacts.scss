@@ -29,3 +29,12 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .contacts {
+        padding: 15px 50px;
+        &__heading {
+            font-size: 14px;
+        }
+    }
+}

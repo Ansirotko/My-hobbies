@@ -57,3 +57,13 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .about-me {
+        padding: 200px 0 10px 20px;
+        &__heading {
+            font-size: 18px;
+            top: -10px;
+        }
+    }
+}

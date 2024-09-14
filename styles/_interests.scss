@@ -15,3 +15,13 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .interests {
+        padding: 50px 0;
+        &__heading {
+            margin-bottom: 20px;
+            font-size: $small-font;
+        }
+    }
+}

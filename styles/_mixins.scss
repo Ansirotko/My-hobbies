@@ -14,3 +14,10 @@
     height: 90px;
     margin: 25px auto 0;
 }
+
+@mixin hobbies500 {
+    content: '';
+    width: 40px;
+    height: 40px;
+    margin: 15px auto 0;
+}

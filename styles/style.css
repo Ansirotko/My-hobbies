@@ -47,6 +47,14 @@ html {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 500px) {
+  .contacts {
+    padding: 15px 50px;
+  }
+  .contacts__heading {
+    font-size: 14px;
+  }
+}
 .navigation {
   padding: 30px 360px;
   background-color: rgba(32, 32, 31, 0.95);
@@ -92,6 +100,17 @@ html {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 500px) {
+  .menu {
+    flex-direction: column;
+  }
+  .menu__item {
+    font-size: 12px;
+  }
+  .menu__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 .social-networks__items {
   color: rgba(32, 32, 31, 0.95);
 }
@@ -109,6 +128,14 @@ html {
   }
   .social-networks__items:not(:last-child) {
     margin-right: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .social-networks__items {
+    font-size: 13px;
+  }
+  .social-networks__items:not(:last-child) {
+    margin-right: 12px;
   }
 }
 .about-me {
@@ -162,6 +189,15 @@ html {
   .about-me__heading {
     font-size: 30px;
     top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-me {
+    padding: 200px 0 10px 20px;
+  }
+  .about-me__heading {
+    font-size: 18px;
+    top: -10px;
   }
 }
 .hobbies {
@@ -278,6 +314,40 @@ html {
     margin: 0 auto 30px;
   }
 }
+@media screen and (max-width: 500px) {
+  .hobbies {
+    max-width: 250px;
+    padding: 15px;
+  }
+  .hobbies:not(:last-child) {
+    margin: 0 auto 20px;
+  }
+  .hobbies__heading {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  .hobbies__caption {
+    font-size: 10px;
+  }
+  .hobbies--dance::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    margin: 15px auto 0;
+  }
+  .hobbies--model::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    margin: 15px auto 0;
+  }
+  .hobbies--sport::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    margin: 15px auto 0;
+  }
+}
 .interests {
   padding: 70px 0;
   background-color: rgba(32, 32, 31, 0.95);
@@ -293,6 +363,15 @@ html {
   }
   .interests__heading {
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .interests {
+    padding: 50px 0;
+  }
+  .interests__heading {
+    margin-bottom: 20px;
+    font-size: 20px;
   }
 }
 .variants {
