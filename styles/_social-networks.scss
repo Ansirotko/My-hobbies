@@ -1,0 +1,23 @@
+.social-networks {
+    &__items {
+        color: rgb(32, 32, 31, 0.95);
+        &:hover {
+            opacity: 40%;
+            transition: .3s;
+        }
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social-networks {
+        &__items {
+            font-size: 18px;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}

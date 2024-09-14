@@ -1,0 +1,59 @@
+.about-me {
+    padding: 480px 0 250px 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    &__heading {
+        font-size: 70px;
+        text-align: left;
+        position: relative;
+        top: 140px;
+        color: rgb(219, 219, 217);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .about-me {
+        padding: 450px 0 200px 50px;
+        &__heading {
+            font-size: 55px;
+            top: 130px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-me {
+        &__heading {
+            font-size: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-me {
+        padding: 400px 0 150px 40px;
+        &__heading {
+            font-size: 45px;
+            top: 90px;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .about-me {
+        padding: 350px 0 100px 30px;
+        &__heading {
+            font-size: 35px;
+            top: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-me {
+        padding: 300px 0 70px 20px;
+        &__heading {
+            font-size: 30px;
+            top: 20px;
+        }
+    }
+}

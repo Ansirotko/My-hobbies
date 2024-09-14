@@ -1,0 +1,31 @@
+.contacts {
+    padding: 20px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(219, 219, 217);
+    &__heading {
+        color: rgb(32, 32, 31, 0.95);
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .contacts {
+        padding: 20px 150px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contacts {
+        padding: 20px 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        padding: 15px 70px;
+        &__heading {
+            font-size: $small-font;
+        }
+    }
+}

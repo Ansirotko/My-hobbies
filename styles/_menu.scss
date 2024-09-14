@@ -1,0 +1,25 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__item {
+        color: $primary-color;
+        font-size: $small-font;
+        &:hover {
+            transform: scale(1.12);
+            transition: .5s;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .menu {
+        flex-direction: column;
+        &__item {
+            font-size: 18px;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

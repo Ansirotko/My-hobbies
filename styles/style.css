@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Tenor Sans", "Roboto";
+  text-align: center;
+  font-weight: 400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 25px;
+}
+
+.contacts {
+  padding: 20px 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(219, 219, 217);
+}
+.contacts__heading {
+  color: rgba(32, 32, 31, 0.95);
+}
+
+@media screen and (max-width: 1250px) {
+  .contacts {
+    padding: 20px 150px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contacts {
+    padding: 20px 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding: 15px 70px;
+  }
+  .contacts__heading {
+    font-size: 20px;
+  }
+}
+.navigation {
+  padding: 30px 360px;
+  background-color: rgba(32, 32, 31, 0.95);
+}
+
+@media screen and (max-width: 1250px) {
+  .navigation {
+    padding: 30px 200px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .navigation {
+    padding: 30px 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    padding: 30px 80px;
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__item {
+  color: white;
+  font-size: 20px;
+}
+.menu__item:hover {
+  transform: scale(1.12);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 650px) {
+  .menu {
+    flex-direction: column;
+  }
+  .menu__item {
+    font-size: 18px;
+  }
+  .menu__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.social-networks__items {
+  color: rgba(32, 32, 31, 0.95);
+}
+.social-networks__items:hover {
+  opacity: 40%;
+  transition: 0.3s;
+}
+.social-networks__items:not(:last-child) {
+  margin-right: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .social-networks__items {
+    font-size: 18px;
+  }
+  .social-networks__items:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.about-me {
+  padding: 480px 0 250px 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.about-me__heading {
+  font-size: 70px;
+  text-align: left;
+  position: relative;
+  top: 140px;
+  color: rgb(219, 219, 217);
+}
+
+@media screen and (max-width: 1500px) {
+  .about-me {
+    padding: 450px 0 200px 50px;
+  }
+  .about-me__heading {
+    font-size: 55px;
+    top: 130px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about-me__heading {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-me {
+    padding: 400px 0 150px 40px;
+  }
+  .about-me__heading {
+    font-size: 45px;
+    top: 90px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .about-me {
+    padding: 350px 0 100px 30px;
+  }
+  .about-me__heading {
+    font-size: 35px;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-me {
+    padding: 300px 0 70px 20px;
+  }
+  .about-me__heading {
+    font-size: 30px;
+    top: 20px;
+  }
+}
+.hobbies {
+  background-color: rgb(219, 219, 217);
+  border-radius: 30px;
+  width: calc((100% - 50px) / 3);
+  padding: 20px;
+}
+.hobbies:not(:last-child) {
+  margin-right: 25px;
+}
+.hobbies__heading {
+  margin: 15px 0;
+  font-size: 25px;
+}
+.hobbies__caption {
+  font-size: 18px;
+  text-align: justify;
+}
+.hobbies--dance::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  display: block;
+  background-image: url(../icons/dance.svg);
+  background-repeat: no-repeat;
+  margin: 35px auto 0;
+}
+.hobbies--model::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  display: block;
+  background-image: url(../icons/heels.svg);
+  background-repeat: no-repeat;
+  margin: 35px auto 0;
+}
+.hobbies--sport::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  display: block;
+  background-image: url(../icons/sport.svg);
+  background-repeat: no-repeat;
+  margin: 35px auto 0;
+}
+
+@media screen and (max-width: 1350px) {
+  .hobbies {
+    max-width: 350px;
+  }
+  .hobbies:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .hobbies {
+    max-width: 300px;
+  }
+  .hobbies:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hobbies {
+    max-width: 2800px;
+  }
+  .hobbies__heading {
+    font-size: 20px;
+  }
+  .hobbies__caption {
+    font-size: 15px;
+  }
+  .hobbies--dance::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    margin: 25px auto 0;
+  }
+  .hobbies--model::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    margin: 25px auto 0;
+  }
+  .hobbies--sport::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    margin: 25px auto 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hobbies {
+    display: block;
+    width: 100%;
+    max-width: 440px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .hobbies:not(:last-child) {
+    margin: 0 auto 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hobbies {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .hobbies:not(:last-child) {
+    margin: 0 auto 30px;
+  }
+}
+.interests {
+  padding: 70px 0;
+  background-color: rgba(32, 32, 31, 0.95);
+}
+.interests__heading {
+  margin-bottom: 40px;
+  color: rgb(219, 219, 217);
+}
+
+@media screen and (max-width: 1190px) {
+  .interests {
+    padding: 60px 0;
+  }
+  .interests__heading {
+    margin-bottom: 30px;
+  }
+}
+.variants {
+  display: flex;
+  padding: 0 50px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .variants {
+    display: block;
+  }
+}
+.background {
+  background-image: url(../img/me.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=style.css.map */

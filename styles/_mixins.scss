@@ -1,0 +1,16 @@
+@mixin hobbies ($bg-icon) {
+    content: '';
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-image: $bg-icon;
+    background-repeat: no-repeat;
+    margin: 35px auto 0;
+}
+
+@mixin hobbies1024 {
+    content: '';
+    width: 90px;
+    height: 90px;
+    margin: 25px auto 0;
+}

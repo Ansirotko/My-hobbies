@@ -1,0 +1,11 @@
+.variants {
+    display: flex;
+    padding: 0 50px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .variants {
+        display: block;
+    }
+}

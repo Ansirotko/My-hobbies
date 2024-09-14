@@ -1,0 +1,22 @@
+.navigation {
+    padding: 30px 360px;
+    background-color: rgb(32, 32, 31, 0.95);
+}
+
+@media screen and (max-width: 1250px) {
+    .navigation {
+        padding: 30px 200px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .navigation {
+        padding: 30px 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        padding: 30px 80px;
+    }
+}

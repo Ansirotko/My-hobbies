@@ -1,0 +1,91 @@
+.hobbies {
+    background-color: rgb(219, 219, 217);
+    border-radius: 30px;
+    width: calc((100% - 25px*2)/3);
+    padding: 20px;
+    &:not(:last-child) {
+        margin-right: 25px;
+    }
+    &__heading {
+        margin: 15px 0;
+        font-size: $base-font;
+    }
+    &__caption {
+        font-size: 18px;
+        text-align: justify;
+    }
+    &--dance::before {
+        @include hobbies (url(../icons/dance.svg));
+    }
+    &--model::before {
+        @include hobbies (url(../icons/heels.svg));
+    }
+    &--sport::before {
+        @include hobbies (url(../icons/sport.svg))
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .hobbies {
+        max-width: 350px;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .hobbies {
+        max-width: 300px;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hobbies {
+        max-width: 2800px;
+        &__heading {
+            font-size: $small-font;
+        }
+        &__caption {
+            font-size: 15px;
+        }
+        &--dance::before {
+            @include hobbies1024;
+        }
+        &--model::before {
+            @include hobbies1024;
+        }
+        &--sport::before {
+            @include hobbies1024;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hobbies {
+        display: block;
+        width: 100%;
+        max-width: 440px;
+        padding: 20px;
+        margin: 0 auto;
+        &:not(:last-child) {
+            margin: 0 auto 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hobbies {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
+        margin: 0 auto;
+        &:not(:last-child) {
+            margin: 0 auto 30px;
+        }
+    }
+}
